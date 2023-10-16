@@ -1,0 +1,34 @@
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .upload-section {
+    text-align: center;
+  }
+  
+  .image-section {
+    text-align: center;
+  }
+  
+  .image-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .added-text {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    font-size: 4vw;
+  }
+  
+  .preview-container {
+    text-align: center;
+  }
+  
+  #previewImage {
+    max-width: 100%;
+  }
+  
