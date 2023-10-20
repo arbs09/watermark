@@ -56,8 +56,15 @@ function downloadImage() {
   let textX = canvas.width * 0.7; // Adjust the x-position percentage as needed
   let textY = canvas.height * 0.9; // Adjust the y-position percentage as needed
   context.fillText(addedText, textX, textY); // Adjust the position of the text for the downloaded image
-  let a = document.createElement('a');
-  a.href = canvas.toDataURL('image/png');
-  a.download = 'modified_image.png';
-  a.click();
+
+  // Access the file name
+  let fileName = selectedFile.name;
+  let fileExtension = fileName.split('.').pop(); // Get the file extension
+
+  // Download the image with the modified file name
+  let link = document.createElement('a');
+  link.href = canvas.toDataURL('image/png');
+  link.download = `${fileName.split('.')[0]}-watermark.${fileExtension}`;
+  link.click();
 }
+
