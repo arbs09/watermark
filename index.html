@@ -27,28 +27,26 @@
 
 <body>
     <div class="w3-container w3-center w3-padding-64">
-        <h1>Watermark Maker</h1>
-        <p style="font-size: 14px;">by <a href="https://arbs09.de/" target="_blank">@arbs09</a></p>
-        <div class="container mb-5">
-            <div class="custom-file mb-3">
-                <input type="file" class="custom-file-input" id="imageUpload" accept="image/*">
+        <h1 class="w3-jumbo">Watermark Maker</h1>
+        <p class="w3-small">by <a href="https://arbs09.de/" target="_blank">@arbs09</a></p>
+        <div class="w3-container w3-margin-bottom">
+            <div class="w3-container w3-margin-bottom">
+                <input type="file" class="w3-input w3-border" id="imageUpload" accept="image/*">
             </div>
 
-            <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="Enter Text" id="textInput">
-                <div class="input-group-append">
-                    <button class="btn btn-primary" type="button" onclick="addText()">Add Text</button>
-                </div>
+            <div class="w3-container w3-margin-bottom">
+                <input type="text" class="w3-input w3-border" placeholder="Enter Text" id="textInput">
+                <button class="w3-btn w3-blue" type="button" onclick="addText()">Add Text</button>
             </div>
 
-            <div id="imageContainer" class="mb-3">
-                <img id="uploadedImage" src="#" alt="Uploaded Image" class="img-fluid">
-                <p id="addedText" class="position-absolute bottom-0 end-0 m-3" style="font-family: 'Arial';"></p>
+            <div id="imageContainer" class="w3-margin-bottom">
+                <img id="uploadedImage" src="#" alt="Uploaded Image" class="w3-image">
+                <p id="addedText" class="w3-text-bottom w3-margin-8" style="font-family: 'Arial';"></p>
             </div>
 
-            <div class="mt-3">
-                <h5>Preview:</h5>
-                <img id="previewImage" class="img-fluid">
+            <div class="w3-margin-top">
+                <h5 class="w3-medium">Preview:</h5>
+                <img id="previewImage" class="w3-image">
             </div>
 
             <button onclick="downloadImage()" class="w3-btn w3-green w3-margin-top w3-margin-bottom">Download Image</button>
