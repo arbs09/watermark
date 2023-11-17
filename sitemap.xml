@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://arbs09.github.io/watermarkmaker/</loc>
+        <loc>https://watermarkmaker.serverobot.de/watermarkmaker/</loc>
         <lastmod>2023-10-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://watermarkmaker.serverobot.de/.well-known/security.txt</loc>
+        <lastmod>2023-10-27</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>        
     </url>
 </urlset>
